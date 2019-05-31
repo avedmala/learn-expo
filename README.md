@@ -2,11 +2,13 @@
 
 ## get started
 1) download the latest version of [nodejs](https://nodejs.org/en/)
-2) get expo `npm install expo-cli --global`
-3) clone the repo
-4) comment out the demo you want to use in `App.js` (demos are located in `./app/components/`)
-5) run the project `expo start`
-6) install the [ios client](https://itunes.apple.com/us/app/expo-client/id982107779) and scan the qr code
+2) might need to run `sudo chwon -R $(whoami) $(brew --prefix)/*` on mac
+3) get expo `npm install expo-cli --global`
+4) clone the repo
+5) run `npm install`
+6) comment out the demo you want to use in `App.js` (demos are located in `./app/components/`)
+7) run the project `expo start`
+8) install the [ios client](https://itunes.apple.com/us/app/expo-client/id982107779) and scan the qr code
 
 ## demos included
 - TextInput

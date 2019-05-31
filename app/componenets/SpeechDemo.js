@@ -35,4 +35,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    textInput: {
+        borderBottomColor: '#d2d2d2',
+        borderBottomWidth: 1,
+        marginBottom: 20,
+    },
 });
