@@ -1,0 +1,38 @@
+import React from 'react';
+import {StyleSheet, Text, View, Button, TextInput} from 'react-native';
+import { Speech } from 'expo';
+
+
+export default class SpeechDemo extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { text: 'You are useless and nobody likes you' };
+    }
+
+    render() {
+        return (
+            <View style={styles.container}>
+                <TextInput
+                    style={styles.textInput}
+                    value={this.state.text} 
+                    multiline = {true}
+                    onChangeText={(text) => this.setState({text})}
+                />
+                <Button
+                    onPress={() => Speech.speak(this.state.text)}
+                    title={'Speak Text'}
+                />
+            </View>
+        );
+    }
+}
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+});
