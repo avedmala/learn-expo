@@ -6,7 +6,12 @@ import AudioDemo from './app/componenets/AudioDemo';
 export default class App extends React.Component {
   render() {
     return (
-      <AudioDemo/>
+      // uncomment the demo you want to use
+      // may only use one at a time
+      
+      // <TextInputDemo/>
+      // <PickerDemo/>
+      // <AudioDemo/>
     );
   }
 }
