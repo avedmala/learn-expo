@@ -15,6 +15,7 @@
 - Picker
 - Audio
 - Speech
+- GestureHandler
 
 ## helpful links
 - https://expo.io/learn
