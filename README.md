@@ -16,6 +16,7 @@
 - Audio
 - Speech
 - GestureHandler
+- Lottie
 
 ## helpful links
 - https://expo.io/learn

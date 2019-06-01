@@ -4,6 +4,7 @@ import PickerDemo from './app/componenets/PickerDemo';
 import AudioDemo from './app/componenets/AudioDemo';
 import SpeechDemo from './app/componenets/SpeechDemo';
 import GestureHandlerDemo from './app/componenets/GestureHandlerDemo';
+import LottieDemo from './app/componenets/LottieDemo';
 
 export default class App extends React.Component {
   render() {
@@ -15,7 +16,8 @@ export default class App extends React.Component {
       // <PickerDemo/>
       // <AudioDemo/>
       // <SpeechDemo/>
-      <GestureHandlerDemo/>
+      // <GestureHandlerDemo/>
+      <LottieDemo/>
     );
   }
 }
