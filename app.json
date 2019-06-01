@@ -23,7 +23,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cognitivetest.learn"
+    },
+    "android": {
+      "package": "com.cognitivetest.learn"
     }
   }
 }

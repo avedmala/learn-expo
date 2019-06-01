@@ -3,6 +3,7 @@ import TextInputDemo from './app/componenets/TextInputDemo';
 import PickerDemo from './app/componenets/PickerDemo';
 import AudioDemo from './app/componenets/AudioDemo';
 import SpeechDemo from './app/componenets/SpeechDemo';
+import GestureHandlerDemo from './app/componenets/GestureHandlerDemo';
 
 export default class App extends React.Component {
   render() {
@@ -13,7 +14,8 @@ export default class App extends React.Component {
       // <TextInputDemo/>
       // <PickerDemo/>
       // <AudioDemo/>
-      <SpeechDemo/>
+      // <SpeechDemo/>
+      <GestureHandlerDemo/>
     );
   }
 }
