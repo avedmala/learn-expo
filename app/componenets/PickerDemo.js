@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View, Picker,} from 'react-native';
+import {StyleSheet, Text, View, Picker, Alert} from 'react-native';
 
 export default class PickerDemo extends React.Component {
 
@@ -14,10 +14,15 @@ export default class PickerDemo extends React.Component {
         });
 
         if(newValue == 'May') {
-            console.log('success')
-        }
-        else {
-            console.log('fail')
+            Alert.alert(
+                'Success',
+                'You entered the correct month!',
+                [
+                    {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+                    {text: 'OK', onPress: () => console.log('OK Pressed')},
+                ],
+                { cancelable: false }
+            )
         }
     }
 

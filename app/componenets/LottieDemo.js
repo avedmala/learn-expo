@@ -40,7 +40,7 @@ export default class LottieDemo extends React.Component {
         return (
             <View style={styles.container}>
                 <StatusBar
-                    barStyle="light-content"
+                    barStyle='default'
                 />
                 {this.state.animation &&
                     <Lottie

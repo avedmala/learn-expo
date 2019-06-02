@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button, TextInput} from 'react-native';
+import {StyleSheet, Text, View, Button, TextInput, Alert} from 'react-native';
 
 
 export default class TextInputDemo extends React.Component {
@@ -11,10 +11,26 @@ export default class TextInputDemo extends React.Component {
 
     checkText() {
         if(this.state.text.replace(/\s/g,'') == '23456') {
-            console.log('success')
+            Alert.alert(
+                'Success',
+                'You entered the digits!',
+                [
+                    {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+                    {text: 'OK', onPress: () => console.log('OK Pressed')},
+                ],
+                { cancelable: false }
+            )
         }
         else {
-            console.log('fail')
+            Alert.alert(
+                'Incorrect',
+                'You are stupid!',
+                [
+                    // {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+                    {text: 'I am stupid', onPress: () => console.log('OK Pressed')},
+                ],
+                { cancelable: false }
+            )    
         }
     }
 

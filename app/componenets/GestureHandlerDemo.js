@@ -114,6 +114,7 @@ export default class GestureHandlerDemo extends React.Component {
                         source={require('../../assets/cognitive.png')}
                     />
                 </RotationGestureHandler> */}
+                <Text style>Zoom and Rotate</Text>
                 <RotationGestureHandler
                     onGestureEvent={this.onRotateGestureEvent}
                     onHandlerStateChange={this.onRotateHandlerStateChange}>

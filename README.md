@@ -11,6 +11,7 @@
 8) install the [ios](https://itunes.apple.com/us/app/expo-client/id982107779) or [android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www) client and scan the qr code
 
 ## demos included
+- Navigation
 - TextInput
 - Picker
 - Audio
