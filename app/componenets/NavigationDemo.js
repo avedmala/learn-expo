@@ -7,7 +7,7 @@ import AudioDemo from './AudioDemo';
 import SpeechDemo from './SpeechDemo';
 import GestureHandlerDemo from './GestureHandlerDemo';
 import LottieDemo from './LottieDemo';
-
+import HeaderDemo from './HeaderDemo';
 class NavigationDemo extends React.Component {
 
   static navigationOptions = {
@@ -41,6 +41,10 @@ class NavigationDemo extends React.Component {
           title="LottieDemo"
           onPress={() => this.props.navigation.navigate('Lottie')}
         />
+        <Button
+          title="HeaderDemo"
+          onPress={() => this.props.navigation.navigate('Header')}
+        />
       </View>
     );
   }
@@ -68,6 +72,9 @@ const RootStack = createStackNavigator(
         },
         Lottie: {
             screen: LottieDemo,
+        },
+        Header: {
+          screen: HeaderDemo,
         },
     },
     {
