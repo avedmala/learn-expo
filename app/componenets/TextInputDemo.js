@@ -1,6 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button, TextInput, Alert} from 'react-native';
-
+import {StyleSheet, Text, View, Button, TextInput, Alert, Vibration} from 'react-native';
 
 export default class TextInputDemo extends React.Component {
 
@@ -10,6 +9,7 @@ export default class TextInputDemo extends React.Component {
     }
 
     checkText() {
+        Vibration.vibrate()
         if(this.state.text.replace(/\s/g,'') == '23456') {
             Alert.alert(
                 'Success',
@@ -33,6 +33,10 @@ export default class TextInputDemo extends React.Component {
             )    
         }
     }
+
+    static navigationOptions = {
+        title: 'TextInputDemo',
+    };
 
     render() {
         return (

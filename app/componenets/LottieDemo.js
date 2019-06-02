@@ -36,11 +36,22 @@ export default class LottieDemo extends React.Component {
         this.setState({ animation: result }, this.playAnimation);
     };
 
+    static navigationOptions = {
+        title: 'LottieDemo',
+        headerStyle: {
+            backgroundColor: '#463268',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+        },
+    };
+
     render() {
         return (
             <View style={styles.container}>
                 <StatusBar
-                    barStyle='default'
+                    barStyle='light-content'
                 />
                 {this.state.animation &&
                     <Lottie

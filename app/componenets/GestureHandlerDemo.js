@@ -65,6 +65,10 @@ export default class GestureHandlerDemo extends React.Component {
       }
   };
 
+  static navigationOptions = {
+    title: 'GestureHandlerDemo',
+  };
+
     render() {
         return (
             <View style={styles.container}>
@@ -81,7 +85,7 @@ export default class GestureHandlerDemo extends React.Component {
                             { rotateX: this.tiltStr },
                             ],
                         }]}
-                        source={require('../../assets/cognitive.png')}
+                        source={require('../../assets/icon.png')}
                     />
                 </PanGestureHandler>
                 <PinchGestureHandler
@@ -96,7 +100,7 @@ export default class GestureHandlerDemo extends React.Component {
                             { scale: this.scale },
                             ],
                         }]}
-                        source={require('../../assets/cognitive.png')}
+                        source={require('../../assets/icon.png')}
                     />
                 </PinchGestureHandler>
                 <RotationGestureHandler
@@ -111,7 +115,7 @@ export default class GestureHandlerDemo extends React.Component {
                             { rotate: this.rotateStr },
                             ],
                         }]}
-                        source={require('../../assets/cognitive.png')}
+                        source={require('../../assets/icon.png')}
                     />
                 </RotationGestureHandler> */}
                 <Text style>Zoom and Rotate</Text>
@@ -131,7 +135,7 @@ export default class GestureHandlerDemo extends React.Component {
                                 { rotate: this.rotateStr },
                                 ],
                             }]}
-                            source={require('../../assets/cognitive.png')}
+                            source={require('../../assets/icon.png')}
                         />
                     </PinchGestureHandler>
                 </RotationGestureHandler>

@@ -5,7 +5,6 @@ import AudioDemo from './app/componenets/AudioDemo';
 import SpeechDemo from './app/componenets/SpeechDemo';
 import GestureHandlerDemo from './app/componenets/GestureHandlerDemo';
 import LottieDemo from './app/componenets/LottieDemo';
-import VibrationDemo from './app/componenets/VibrationDemo';
 import NavigationDemo from './app/componenets/NavigationDemo';
 
 export default class App extends React.Component {
@@ -20,7 +19,6 @@ export default class App extends React.Component {
       // <SpeechDemo/>
       // <GestureHandlerDemo/>
       // <LottieDemo/>
-      // <VibrationDemo/>
       <NavigationDemo/>
     );
   }

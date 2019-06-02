@@ -1,15 +1,19 @@
 import React from 'react';
-import { Button, View, Text } from 'react-native';
-import { createAppContainer, createStackNavigator } from 'react-navigation'; // Version can be specified in package.json
+import { Button, View } from 'react-native';
+import { createAppContainer, createStackNavigator } from 'react-navigation'; // https://reactnavigation.org/docs/en/getting-started.html
 import TextInputDemo from './TextInputDemo';
 import PickerDemo from './PickerDemo';
 import AudioDemo from './AudioDemo';
 import SpeechDemo from './SpeechDemo';
 import GestureHandlerDemo from './GestureHandlerDemo';
 import LottieDemo from './LottieDemo';
-import VibrationDemo from './VibrationDemo';
 
 class NavigationDemo extends React.Component {
+
+  static navigationOptions = {
+    title: 'NavigationDemo',
+  };
+
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -36,10 +40,6 @@ class NavigationDemo extends React.Component {
         <Button
           title="LottieDemo"
           onPress={() => this.props.navigation.navigate('Lottie')}
-        />
-        <Button
-          title="VibrationDemo"
-          onPress={() => this.props.navigation.navigate('Vibration')}
         />
       </View>
     );
@@ -68,9 +68,6 @@ const RootStack = createStackNavigator(
         },
         Lottie: {
             screen: LottieDemo,
-        },
-        Vibration: {
-            screen: VibrationDemo,
         },
     },
     {

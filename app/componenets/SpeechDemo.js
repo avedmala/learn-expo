@@ -10,6 +10,10 @@ export default class SpeechDemo extends React.Component {
         this.state = { text: 'You are useless and nobody likes you' };
     }
 
+    static navigationOptions = {
+        title: 'SpeechDemo',
+    };
+
     render() {
         return (
             <View style={styles.container}>

@@ -26,6 +26,10 @@ export default class PickerDemo extends React.Component {
         }
     }
 
+    static navigationOptions = {
+        title: 'PickerDemo',
+    };
+
     render() {
         return (
             <View style={styles.container}>

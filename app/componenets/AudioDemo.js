@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Button, View,} from 'react-native';
-import {Audio,} from 'expo';
+import {Audio} from 'expo';
 
 export default class AudioDemo extends React.Component {
 
@@ -22,6 +22,10 @@ export default class AudioDemo extends React.Component {
                 // An error occurred!
             }
         })();
+    }
+
+    componentWillUnmount() {
+        this.sound.stopAsync();
     }
 
     onPlayPausePressed = () => {
@@ -47,6 +51,10 @@ export default class AudioDemo extends React.Component {
           this.sound.stopAsync();
           this.setState({ isPlaying: false });
         }
+    };
+
+    static navigationOptions = {
+        title: 'AudioDemo',
     };
 
     render() {
