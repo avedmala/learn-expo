@@ -17,7 +17,6 @@
 - Speech
 - GestureHandler
 - Lottie
-- Vibration/ Haptic Feedback
 
 ## helpful links
 - https://expo.io/learn
