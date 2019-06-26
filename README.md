@@ -23,3 +23,5 @@
 - https://www.youtube.com/watch?v=mkualZPRZCs
 - https://docs.expo.io/versions/v32.0.0/sdk/overview/ 
 - https://facebook.github.io/react-native/
+- http://www.reactnativeexpress.com/
+- https://flexboxfroggy.com/
