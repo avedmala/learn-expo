@@ -2,7 +2,7 @@
 
 ## get started
 1) download the latest version of [nodejs](https://nodejs.org/en/)
-2) might need to run `sudo chwon -R $(whoami) $(brew --prefix)/*` on mac
+2) might need to run `sudo chown -R $(whoami) $(brew --prefix)/*` on mac
 3) get expo `npm install expo-cli --global`
 4) clone the repo
 5) run `npm install`
